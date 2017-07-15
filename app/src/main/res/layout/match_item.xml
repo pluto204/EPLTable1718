@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/homeLayout">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/homelogo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/homename"
+            android:textColor="#000000"
+            android:text="Manchester United"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/awayLayout"
+        android:layout_toRightOf="@+id/homeLayout"
+        android:layout_alignBottom="@+id/homeLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:layout_marginLeft="16dp"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/homeScore"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:layout_marginRight="16dp"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/awayScore"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/awayScore"
+            android:layout_toRightOf="@+id/homeScore">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vs"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="5sp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12:30"
+                android:textColor="#000000"
+                android:id="@+id/timeTV"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="2017-08-15"
+                android:id="@+id/dateTV"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:id="@+id/awayLayout">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:id="@+id/awaylogo"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:id="@+id/awayname"
+            android:textAlignment="center"
+            android:text="Tottenham Hotspur FC"/>
+    </LinearLayout>
+
+</RelativeLayout>

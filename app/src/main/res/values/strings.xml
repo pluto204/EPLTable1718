@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EPL 2017-2018</string>
+    <string name="time_prompt">Choose a period</string>
+    <string-array name="time_arrays">
+        <item>All Time</item>
+        <item>2017-08</item>
+        <item>2017-09</item>
+        <item>2017-10</item>
+        <item>2017-11</item>
+        <item>2017-12</item>
+        <item>2018-01</item>
+        <item>2018-02</item>
+        <item>2018-03</item>
+        <item>2018-04</item>
+        <item>2018-05</item>
+    </string-array>
+</resources>
